@@ -15,7 +15,7 @@ const verifyToken = (req: Request, res: Response, next: NextFunction) => {
     console.log(token)
     if(!token) {
       console.log("from backend")
-        return res.status(401).json({message:"unauthorized"});
+      return res.status(401).json({message:"unauthorized"});
        
     }
 

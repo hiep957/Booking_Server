@@ -5,6 +5,13 @@ import mongoose from 'mongoose';
 import userRouter from './routes/users'
 import authRouter from './routes/auth'
 import cookieParser from "cookie-parser";
+import {v2 as cloudinary} from 'cloudinary';
+          
+cloudinary.config({ 
+  cloud_name: 'dmlfolzmj', 
+  api_key: '938816921467175', 
+  api_secret: 'zmTMF4dT2XRseybZEjSVY1_DKAI' 
+});
 mongoose.connect(process.env.MONGO_URL as string);
 const app = express();
 app.use(cookieParser());
