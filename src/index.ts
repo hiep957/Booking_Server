@@ -32,7 +32,7 @@ app.get("/api/test",async (req:Request,res:Response)=>{
 
 app.use("/api/users",userRoutes);
 app.use("/api/auth",authRoutes);
-app.use("api/my-hotels", myhotelsRoutes)
+app.use("/api/my-hotels", myhotelsRoutes)
 
 app.listen(7000,()=>{
     console.log("server running on localhost:7000");
