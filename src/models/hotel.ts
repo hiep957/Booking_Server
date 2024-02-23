@@ -15,6 +15,7 @@ export type HotelType = {
     starRating: number;
     imageUrls: string[];
     lastUpdated: Date;
+    
 };
 
 const hotelSchema = new mongoose.Schema<HotelType>({
